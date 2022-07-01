@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Link"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:hasInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:hasInterface">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Device"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Link"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:attachedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:attachedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualInterface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalInterface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:connectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:connectedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:functionBefore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:functionBefore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:hasFunction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:hostedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:hostedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualDevice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalDevice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:implements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:implements">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NFImplementation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:isE2Node -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:isE2Node">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RIC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:servicedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:servicedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Device">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Interface">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalInterface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Link">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalLink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:SystemDevice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:SystemDevice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#net:Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:ApplicationProtocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:ApplicationProtocol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:CarrierAggregationControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:CarrierAggregationControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:CentralUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:CentralUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:ConnectedModeMobilityControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:ConnectedModeMobilityControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Device -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Device"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:DistributedUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:DistributedUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:DualConnectivityControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:DualConnectivityControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:E2Node -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:E2Node"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:E2ServiceModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:E2ServiceModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:FixedFunctionImpl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:FixedFunctionImpl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NFImplementation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:IdleMobilityControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:IdleMobilityControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Interface"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:KeyPerformanceMetrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:KeyPerformanceMetrics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:E2ServiceModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:LimitedVirtualFunctionImpl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:LimitedVirtualFunctionImpl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NFImplementation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Link"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:MAC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:MAC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NFImplementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NFImplementation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NearRTRIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NearRTRIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RIC"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NonRTRIC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkInterfaces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkInterfaces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:E2ServiceModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NonRTRIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NonRTRIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RIC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PDCP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PDCP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PHYHigh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PHYHigh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PHYLow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PHYLow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalDevice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalDevice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Device"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalInterface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalInterface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalLink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PhysicalLink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Link"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualLink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:E2ServiceModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RIC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RLC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RLC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RRC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RRC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioAccessControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioAccessControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioBearerControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioBearerControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioResourceAllocationControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioResourceAllocationControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:SDAP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:SDAP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualDevice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualDevice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualFunctionImpl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualFunctionImpl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NFImplementation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualInterface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualInterface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Interface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualLink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualLink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:Link"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:CarrierAggregationControl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:ConnectedModeMobilityControl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:DualConnectivityControl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:IdleMobilityControl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioAccessControl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioBearerControl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioResourceAllocationControl"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:CentralUnit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:DistributedUnit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RadioUnit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:FixedFunctionImpl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:LimitedVirtualFunctionImpl"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:VirtualFunctionImpl"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:KeyPerformanceMetrics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:NetworkInterfaces"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RANControl"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:MAC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PDCP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PHYHigh"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:PHYLow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RF"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RLC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:RRC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tbecker/ontologies/2022/5/untitled-ontology-16#oran:SDAP"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
